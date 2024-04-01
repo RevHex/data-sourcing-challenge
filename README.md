@@ -1,5 +1,5 @@
 # Data Sourcing Challenge
- <b><font size="+1"><font color="#1F5AF5"> Merging NYT and TMBD Data
+ <b><font size="+1"><font color="#1F5AF5"> Merging New York Times and The Movie Database
  </font></b>
 
 ![Static Badge](https://img.shields.io/badge/Merge%20-%20%23FFD150?style=plastic&label=Data&labelColor=%23000000)
