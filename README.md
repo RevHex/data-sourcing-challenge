@@ -25,9 +25,6 @@ The title is extracted from the "headline.main" column and is saved in a new col
 The "keywords" column is correctly converted to string data using the supplied extract_keywords function
 A list called titles is created from the "title" column using to_list()</li>
 
-<li> <font color="#1F5AF5">Quiver Quantitative</font> started as a hobby after they learned to code in high school. They posted their first data sets and visuals during their undergrad.</li>
-
-<li> After their feature in Bloomberg they decided to turn their project into a business. At launch they had landed about <font color="#14DC5A">$100,000</font> and by the end of the year they raised another <font color="#14DC5A">$500,000</font>.</li>
 </ul>
 </details>
 
