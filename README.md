@@ -54,49 +54,20 @@
 </details>
 
 <details> 
-<Summary> <b><font size="+2">  Financial Landscape </font></b> </summary>
+<Summary> <b><font size="+2">  Merge and Clean the Data for Export </font></b> </summary>
 
 <ul>
-<li> In general this fintech aims to disrupt and ultimately supplant conventional financial service providers by demonstrating greater agility, catering to an overlooked segment of the population, and delivering swifter/superior service.</li>
-
-<li> Currently, the three most highly valued finanace companies utilizing a.i. are Ant Group, Stripe, and Revolut.</li>
+<li> The New York Times reviews and TMDB DataFrames are merged on the title column </li>
+<li> A list called columns_to_fix is created to store the names of the genres, spoken_languages, and production_countries columns </li>
+<li> A list is created called characters_to_remove containing [, ], and ' </li>
+<li> A for loop is created to loop through columns_to_fix </li>
+<li> The columns to fix are converted to the string data type</li>
+<li> characters_to_remove is looped through to remove the characters from the string using the Pandas str.replace() method</li>
+<li> The head of the updated DataFrame is displayed to confirm the list characters were removed</li>
+<li> The byline.person column is dropped</li>
+<li> Duplicate rows are deleted </li>
+<li> The DataFrame index is reset</li>
+<li> The DataFrame is exported to a CSV file without the index </li>
 </ul>
 </details>
 
-<details> 
-<Summary> <b><font size="+2"> Results </font></b> </summary>
-
-<ul>
-<li> Providing access to congressioanl investments, exposing trends of insider trading, government contract statements, and providing data sets and api that normally would not be available to the leyman. </li>
-
-<li>Customer acquisition cost, customer lifetime value, and monthly recurring revenue are some of the core metrics used to mesaure companies in this branch of fintech. </li>
-
-<li>Based on the limited resources available for comparison with other competitors in fintech, it appears they rank somewhere in the middle. Keeping in mind that they are a small business with only 15 employees and are not publicly traded. </li>
-</ul>
-</details>
-
-
-<details> 
-<Summary> <b><font size="+2"> Recommendations </font></b> </summary>
-
-<ul>
-<li>If their aim was to attract a broader audience, I would recommend providing their back testing program for free or at an entry-level price, albeit with limited access.</li>
-
-<li>This avenue has the potential to assist individuals with minimal or no investment background in becoming more accustomed to the concept. Expanding the consumer base would directly influence profitability, along with other fundamental metrics in the fintech industry.</li>
-
-<li>There wouldn't be a necessity for new software or hardware as it would leverage existing resources under their ownership and control. My proposal would merely alter the utilization and accessibility of their current programs.</li>
-</ul>
-</details>
-
-<details> 
-<Summary> <b><font size="+2"> Resources </font></b> </summary>
-
-<ul>
-<li> https://github.com/kefranabg/readme-md-generator </li>
-<li> https://chat.openai.com/ </li>
-<li> https://github.com/Babi-B/git-readme-tips?tab=readme-ov-file#styling-text </li>
-<li> https://shields.io/ </li>
-<li> https://www.quiverquant.com/blog/ </li>
-<li> https://bullishbears.com/quiver-quantitative-review/ </li>
-</ul>
-</details>
