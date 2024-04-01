@@ -6,9 +6,24 @@
 
 
 <details> 
-<Summary> <b><font size="+2"> Overview and Origin </font></b> </summary>
+<Summary> <b><font size="+2"> Access the New York Times API </font></b> </summary>
 <ul>
-<li> Fast tracked in Feb 2020 the company was founded by Christopher and James Kardatze</li>
+<li> query_url is correctly constructed
+An empty list reviews_list is created
+A for loop is created to loop through 20 times
+The query_url is extended to include a page
+A GET request is made to retrieve results and the JSON data is stored in a variable called reviews
+A 12-second interval is used between queries
+A try-except clause is used
+Inside the try clause, there is a loop to loop through the reviews["response"]["docs"] list
+The reviews results are correctly appended to reviews_list
+The query page number is printed
+The except clause prints out the page number that had no results, then breaks from the loop
+json.dumps with the argument indent=4 is used to preview the first five results
+reviews_list is converted to a Pandas DataFrame using json_normalize()
+The title is extracted from the "headline.main" column and is saved in a new column "title"
+The "keywords" column is correctly converted to string data using the supplied extract_keywords function
+A list called titles is created from the "title" column using to_list()</li>
 
 <li> <font color="#1F5AF5">Quiver Quantitative</font> started as a hobby after they learned to code in high school. They posted their first data sets and visuals during their undergrad.</li>
 
