@@ -29,16 +29,27 @@
 </details>
 
 <details> 
-<Summary> <b><font size="+2"> Business Activities </font></b> </summary>
+<Summary> <b><font size="+2"> Access The Movie Database API </font></b> </summary>
 
 <ul>
-<li> To make the clandestine insight surrounding corporate investments, lobbyists, and even stock trades among congressional members, that have been shielded by hedge funds and brokerage firms alike, more accessible and practical.</li>
-
-<li>The target audience is retail investors, both laymen and professional alike. </li>
-
-<li>By making this "alternative" data more accessible and offering api subscriptions.</li>
-
-<li>Their expertise lies in employing data analytics and machine learning to scrutinize financial data, aiding their clients in making well-informed investment choices. They provide an array of products and services, encompassing data feeds, bespoke research reports, and investment software tools.</li>
+<li> An empty list called tmdb_movies_list is created</li>
+<li> A variable called request_counter is created and assigned the value of 1</li>
+<li> A for loop is created to loop through the titles list</li>
+<li> request_counter is incremented by 1 </li>
+<li> time.sleep(1) when request_counter reaches a multiple of 50</li>
+<li> A GET request that sends the title to The Movie Database search is performed, and the JSON results are retrieved</li>
+<li> A try-except clause is used</li>
+<li> The except clause prints out a statement if a movie is not found</li>
+<li> The movie ID is collected from the first result and saved as a variable</li>
+<li> A GET request is made using the movie query URL and movie ID to retrieve the full movie details in JSON format</li>
+<li> The genre names are extracted from the results into a list called genres</li>
+<li> The spoken_languages' English names are extracted from the results into a list called spoken_languages</li>
+<li> The production_countries' names are extracted from the results into a list called production_countries</li>
+<li> A dictionary is created with the specified 15 fields</li>
+<li> The results dictionary is appended to the tmdb_movies_list list</li>
+<li> A message is printed with the name of the movie to indicate that the title was found</li>
+<li> The first five results are previewed using json.dumps with the argument indent=4</li>
+<li> The results are converted to a DataFrame called tmdb_df with pd.DataFrame()</li>
 </ul>
 </details>
 
